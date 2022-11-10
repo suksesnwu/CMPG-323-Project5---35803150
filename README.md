@@ -8,137 +8,81 @@
     <ol>
       <ul>
         <a href="#general-info">General Info</a>
-        <ul>
-          <li><a href="#login">Login</a></li>
-        </ul>
       </ul>
       <ul><a href="#quick-start">Quick start</a></ul>
-      <ul><a href="#iot-automation-device-management-system">IoT Automation Device Management System</a>
+      <ul><a href="#report-development">Report Development</a>
         <ul>
-          <li><a href="#categories">Categories</a></li>
-          <li><a href="#zones">Zones</a></li>
-          <li><a href="#devices">Devices</a></li>
+          <li><a href="#high-level-metrics">High-Level Metrics</a></li>
+          <li><a href="#device-monitoring">Device Monitoring</a></li>
+          <li><a href="#device-registration">Device Registration</a></li>
+          <li><a href="#filtering">Filtering</a></li>
+          <li><a href="#strech-tasks">Stretch Tasks</a></li>
         </ul>
       </ul>
-      <ul><a href="#orchestrator">Orchestrator</a></ul>
     </ol>
 </details>
 
 ## General Info
-### IoT Device Management System
+### Connected Office Initiative (COI)
 ***
-This is an IoT UIPath Automation Device Management System that helps administrators register, organise, monitor, and remotely manage all IoT devices deployed by the organisation. Users and Administrator must login to be authorized so that they can register IoT devices, categorise them and deploy them throughout  the  organisation's  buildings  in  predefined  zones. 
+The Connected Office Initiative (COI) encapsulates the use of IoT devices within the network, placed all over the office building, to collect and share the data that these devices gather.
 
-**Zones**: _Keep track of areas where the IoT devices are deployed._
-
-**Categories**: _Keep track of IoT devices that have particular shared characteristics._
-
-**Device**: _The IoT device collect and share data about the way it is used and about the environment around it._
-
+This is a report built in Power BI, that will help all stakholders see the same information pertaining to the status of IoT device registrations on various platforms. 
 
 ## Quick start
-Clone the repository to open it on your PC
+The report can be accessed on this link: 
 
-### Login
+## Report Development
+
+### High-Level Metrics
 ***
-Follow these steps to login: 
-1. Navigate to Category/Zone folder
-2. The login is on made available on each User Acceptance Testing
+This a summary view that shows business stakeholders a high-level view of the ‘important’ data.
 
-## IoT Automation Device Management System
+#### Count of Device Name
+- A visual that shows counts of devices 
 
-### Categories
+#### Count of Zones
+- A visual that shows counts of zones 
+
+#### Count of Categories
+- A visual that shows counts of categories 
+
+### Device Monitoring
 ***
-#### How to Create a New Category
-- Open Create Category.xaml
-- Execute, if web app logged in, log out
-- Automation will create all categories provided in the excel
+
+#### Chart - Count of Device Name by Category
+- A visual that allows the user to monitor devices per category 
+
+#### Chart - Count of Device Name by Zone
+- A visual that allows the user to monitor devices per zone 
+
+#### Chart - Count of Device Name by Status (Online or Offline)
+- A visual that allows the user to monitor online versus offline devices 
 
 
-When you’re done, click the **Stop** button UiPath Studio.
-
-#### View Your Categories
-To view a list of all the Categories:
-- Open ReadCategory.xaml
-- Execute, if web app logged in, log out
-- Automation will read all categories.
-
-
-When you’re done, click the **Stop** button UiPath Studio.
-
-#### Edit and Update an Existing Category
-You can edit categories that has already been created.
-- Open UpdateCategories.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and update description of categories.
-
-#### Delete a Category
-You can delete zones that has already been created.
-- Open DeleteCategory.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and delete categories.
-
-### Zones
+### Device Registration
 ***
-#### How to Create a New Zone
-- Open CreateZone.xaml
-- Execute, if web app logged in, log out
-- Automation will create all zones provided in the excel
+
+#### Chart - Count of Device Name by Date Installed
+- A visual that allows the user to see how many devices have been registered over a timespan 
+
+#### Chart - Count of Category by Device Name
+- A visual that allows the user to see how many categories of devices have been created 
+
+#### Chart - Count of Device Name by Status (Online or Offline)
+- A visual that allows the user to see how many zones contain registered devices on a timeline 
 
 
-When you’re done, click the **Stop** button UiPath Studio.
-
-#### View Your Zones
-To view a list of all the Zones:
-- Open ReadZone.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and read all zones.
-
-When you’re done, click the **Stop** button UiPath Studio.
-#### Edit and Update an Existing Zone
-You can edit a zone that has already been created.
-- Open UpdateZones.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and update description of zones.
-
-#### Delete a Zone
-You can delete zones that has already been created.
-- Open DeleteZones.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and delete zones.
-
-### Devices
+### Filtering
 ***
-#### How to Create a New Device
-- Open CreateDevices.xaml
-- Execute, if web app logged in, log out
-- Automation will create all devices provided in the excel
+- Make use of filters that can be applied across pages and visuals 
+- A filter for users to filter the report based on device category 
+- A filter for users to filter the report based on device platform 
+- A filter for users to filter the report based on device zone 
+- A filter for users to filter the report based on device registration date 
 
-
-When you’re done, click the **Stop** button UiPath Studio.
-
-#### View Your Devices
-To view a list of all the Devices:
-- Open ReadDevices.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and read all devices.
-
-
-#### Edit and Update an Existing Device
-You can edit a device that has already been created.
-- Open UpdateDevices.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and update status of devices.
-
-#### Delete a Device
-You can delete a device that has already been created.
-- Open DeleteDevices.xaml
-- Execute, if its logged in, log out.
-- Automation will log in and delete devices in a loop.
-
-
-## Orchestrator
-
-![orchestrator proof](https://user-images.githubusercontent.com/69342894/198301325-51d9701c-af46-4b19-9616-7847eb246a4c.png)
+### Stretch Tasks
+***
+- Added filtering with month, quarter and year for High-Level Metrics
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
