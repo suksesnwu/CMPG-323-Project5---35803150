@@ -30,7 +30,7 @@ The Connected Office Initiative (COI) encapsulates the use of IoT devices within
 This is a report built in Power BI, that will help all stakholders see the same information pertaining to the status of IoT device registrations on various platforms. 
 
 ## Quick start
-The report can be accessed on this link: 
+The report can be accessed on this link: <a href="https://app.powerbi.com/groups/me/reports/3e49136a-d7ad-4e42-85b0-e17b423ea022/ReportSection7c1a104924a1005b0458">Report</a>
 
 ## Report Development
 
